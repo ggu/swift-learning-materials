@@ -3,7 +3,7 @@ A repository meant to store helpful resources and Xcode projects demonstrating v
 In general, an Xcode project or playground is attached to each topic under 'Videos'
 
 ## Videos
-Using .xib in .storyboard for reusable views (see: Xib project): 
+Using .xib in .storyboard for reusable views (see: Xib project): https://www.youtube.com/watch?v=H-55qZYc9qI
 
 ## Further readings
 Optionals - https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/OptionalChaining.html
