@@ -8,15 +8,28 @@
 
 import UIKit
 
+@IBDesignable
 class HeaderView: UIView {
 
   @IBOutlet var view: UIView!
   
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    
+    setupView()
+  }
+  
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    UINib(nibName: "HeaderView", bundle: nil).instantiateWithOwner(self, options: nil)
-    addSubview(view)
-    view.frame = self.bounds
+    
+    setupView()
   }
-
+  
+  func setupView() {
+    let bundle = Bundle(for: type(of: self))
+    UINib(nibName: "HeaderView", bundle: bundle).instantiate(withOwner: self, options: nil)
+    
+    addSubview(view)
+    view.frame = bounds
+  }
 }
